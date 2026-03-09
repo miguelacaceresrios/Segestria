@@ -1,0 +1,71 @@
+<svg width="520" height="100" viewBox="0 0 520 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="520" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="60%" stop-color="#111410"/>
+      <stop offset="100%" stop-color="#0a0f0a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3a7d2c"/>
+      <stop offset="100%" stop-color="#1a3d10"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="0" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2e6b20"/>
+      <stop offset="100%" stop-color="#1a4012"/>
+    </linearGradient>
+    <linearGradient id="avatar_bg" x1="0" y1="0" x2="0" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2a5c1e"/>
+      <stop offset="100%" stop-color="#0f2009"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="subtle_shadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="100" rx="14" fill="url(#bg)"/>
+
+
+
+  <!-- Subtle noise texture overlay -->
+  <rect width="520" height="100" rx="14" fill="none" stroke="#1e2a1a" stroke-width="1"/>
+
+  <!-- Avatar -->
+  <rect x="20" y="18" width="64" height="64" rx="16" fill="url(#avatar_bg)"/>
+  <text x="52" y="58" font-family="system-ui" font-size="26" text-anchor="middle" fill="rgba(255,255,255,0.15)">🌿</text>
+
+  <!-- Server name -->
+  <text x="102" y="38" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="800" fill="#e8e8e8" filter="url(#subtle_shadow)" letter-spacing="-0.3">Slav-MC</text>
+
+  <!-- Online dot + members -->
+  <circle cx="103" cy="52" r="3.5" fill="#4caf50" filter="url(#glow)"/>
+  <text x="113" y="56" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#6b7a6b" letter-spacing="0.2">8 en línea</text>
+  <text x="174" y="56" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#3a4a3a">·</text>
+  <text x="182" y="56" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#6b7a6b" letter-spacing="0.2">19 miembros</text>
+
+  <!-- Tags row -->
+  <rect x="102" y="65" width="56" height="16" rx="5" fill="#1a2a15" stroke="#2a4020" stroke-width="1"/>
+  <text x="130" y="76.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="8.5" fill="#6aaa50" text-anchor="middle">ROLEPLAY</text>
+
+  <rect x="164" y="65" width="36" height="16" rx="5" fill="#1a2a15" stroke="#2a4020" stroke-width="1"/>
+  <text x="182" y="76.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="8.5" fill="#6aaa50" text-anchor="middle">MODS</text>
+
+  <rect x="206" y="65" width="82" height="16" rx="5" fill="#1a2a15" stroke="#2a4020" stroke-width="1"/>
+  <text x="247" y="76.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="8.5" fill="#6aaa50" text-anchor="middle">CROSSPLATFORM</text>
+
+  <!-- Divider -->
+  <line x1="310" y1="20" x2="310" y2="80" stroke="#1e2a1a" stroke-width="1"/>
+
+  <!-- Right side: version + join -->
+  <text x="330" y="38" font-family="'Courier New', monospace" font-size="10" fill="#3a5a30" letter-spacing="1">MINECRAFT  1.21.10</text>
+
+  <text x="330" y="55" font-family="'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#4a5a44">Est. febrero 2026</text>
+
+  <!-- Join button -->
+  <rect x="330" y="65" width="80" height="18" rx="6" fill="url(#btn)" stroke="#3a6025" stroke-width="1"/>
+  <text x="370" y="77.5" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#c8e6b0" text-anchor="middle" letter-spacing="0.8">UNIRSE</text>
+</svg>
