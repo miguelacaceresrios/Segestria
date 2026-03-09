@@ -66,4 +66,4 @@ Segestria es una araña que espera escondida hasta que llega el momento. El laun
 
 [![Slav-MC](./assets/discord-banner.svg)](https://discord.gg/Ak34E2PMhS)
 
-Ahí está el canal `#anuncios` con las versiones, `#mods` para pedir que agreguen cosas, y `#reportes` si algo explota.
+
