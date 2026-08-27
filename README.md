@@ -56,6 +56,12 @@ El launcher no toca cuentas premium ni nada raro. Solo verifica que el usuario e
 
 ---
 
+## El nombre
+
+Segestria es una araña que espera escondida hasta que llega el momento. El launcher espera en segundo plano, y cuando toca actualizar o jugar, aparece y hace su trabajo rápido. Además suena mejor que "MinecraftLauncherFinalV3ConMods".
+
+---
+
 ## Servidor de Discord
 
 [![Slav-MC](./assets/discord-banner.svg)](https://discord.gg/Ak34E2PMhS)

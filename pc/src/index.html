@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segestria Launcher</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="app-header">
+        <span class="eyebrow">MC 1.20.1 · Forge</span>
+        <h1>Segestria</h1>
+      </header>
+
+      <section id="server-status" class="server-row">
+        <div class="server-row-art">
+          <img id="server-icon" class="server-icon-img hidden" alt="" />
+          <span id="server-icon-fallback" class="server-icon-fallback">?</span>
+        </div>
+        <div class="server-row-info">
+          <span id="server-status-title" class="server-row-title">Sin servidor</span>
+          <span id="server-status-text" class="server-row-subtitle">Configurá la IP del server</span>
+        </div>
+        <span id="server-status-dot" class="status-dot status-dot--unknown"></span>
+      </section>
+
+      <section id="news" class="news hidden">
+        <div class="news-header">Novedades</div>
+        <div id="news-body" class="news-body"></div>
+      </section>
+
+      <form id="settings-form" class="settings">
+        <label class="input-group">
+          <span class="field-label">Usuario</span>
+          <span class="input-shell">
+            <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.4" />
+              <path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" />
+            </svg>
+            <input id="username" placeholder="Tu nombre en el server" required />
+          </span>
+        </label>
+
+        <label class="input-group">
+          <span class="field-label">Servidor</span>
+          <span class="input-shell">
+            <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="6" rx="2" />
+              <rect x="4" y="13" width="16" height="6" rx="2" />
+              <circle cx="8" cy="8" r="0.6" fill="currentColor" stroke="none" />
+              <circle cx="8" cy="16" r="0.6" fill="currentColor" stroke="none" />
+            </svg>
+            <input id="server" placeholder="ip.del.server:25565" />
+          </span>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="no-server-toggle" />
+          <span>Jugar sin servidor</span>
+        </label>
+
+        <details class="advanced">
+          <summary>Avanzado</summary>
+          <label>
+            Flags de JVM extra
+            <input id="extra-jvm" placeholder="-Dfoo=bar -Dbaz=qux" />
+          </label>
+        </details>
+      </form>
+
+      <button id="play-button" type="button" class="play-button">Jugar</button>
+
+      <div id="progress-wrap" class="progress-wrap hidden">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="status-text" class="status-text"></p>
+      </div>
+
+      <p id="error-text" class="error-text hidden"></p>
+    </main>
+  </body>
+</html>
